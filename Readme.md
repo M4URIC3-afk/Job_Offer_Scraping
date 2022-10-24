@@ -5,11 +5,11 @@ This Python notebook scrapes the most recent Linkedin Job Offers for a given job
 It is currently set up for job offers written in French or English.
 Also, it is currently set up to use Mozilla Firefox as a browser (in order to scroll through the page).
 
-See 'Main.ipynb' for detailed presentation.
+See [Main.ipynb](https://github.com/crish1eev1/Job_Offer_Scraping/blob/master/Main.ipynb) for detailed presentation.
 
 
 ## Description
-I'm currently retraining to become a Data specialist. Since I will soon be looking for a job, I thought I should define what are the most in-demand programming languages and dashboarding tools. And could use python to do that.
+I'm currently retraining to become a Data specialist. Since I will soon be looking for a job, I thought I should define what are the most in-demand programming languages and dashboarding tools in the job market. And could use python to do that.
 
 
 ## Technology
