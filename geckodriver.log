@@ -1,0 +1,216 @@
+1662286645338	geckodriver	INFO	Listening on 127.0.0.1:54490
+1662286648448	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54491" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilehUvn5K"
+1662286648968	Marionette	INFO	Marionette enabled
+1662286648972	Marionette	INFO	Listening on port 54503
+WebDriver BiDi listening on ws://localhost:54491
+Read port: 54503
+1662286649302	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilehUvn5K\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54491/devtools/browser/5a5b64fa-e4b0-4bc5-9bfd-f1fa9c17fa14
+1662286660875	Marionette	INFO	Stopped listening on port 54503
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662286685932	geckodriver	INFO	Listening on 127.0.0.1:54532
+1662286689005	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54533" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileYHVoHZ"
+1662286689366	Marionette	INFO	Marionette enabled
+1662286689370	Marionette	INFO	Listening on port 54544
+WebDriver BiDi listening on ws://localhost:54533
+Read port: 54544
+1662286689606	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileYHVoHZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54533/devtools/browser/d40ba90d-123f-4b96-90da-187b5cc8e478
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript error: , line 0: uncaught exception: undefined
+1662287028750	geckodriver	INFO	Listening on 127.0.0.1:54699
+1662287031779	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54700" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilefEqG8j"
+1662287032134	Marionette	INFO	Marionette enabled
+1662287032139	Marionette	INFO	Listening on port 54712
+WebDriver BiDi listening on ws://localhost:54700
+Read port: 54712
+1662287032371	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilefEqG8j\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54700/devtools/browser/fa24bd6a-ef54-4381-85f7-c85aa61e0728
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript error: https://static-exp1.licdn.com/sc/h/1f0o8asarfspok2zpu5dl86by, line 1: TypeError: n.error is undefined
+JavaScript error: https://platform.linkedin.com/litms/utag/jobs-guest-frontend/utag.js?cb=1662286800000, line 1: TypeError: utag is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1662287157722	Marionette	INFO	Stopped listening on port 54712
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662287886787	geckodriver	INFO	Listening on 127.0.0.1:55041
+1662287889848	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55042" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilenI66ME"
+1662287890190	Marionette	INFO	Marionette enabled
+1662287890194	Marionette	INFO	Listening on port 55054
+WebDriver BiDi listening on ws://localhost:55042
+Read port: 55054
+1662287890324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilenI66ME\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55042/devtools/browser/99a7b448-a994-414f-a565-22c2d7153a41
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript error: https://static-exp1.licdn.com/sc/h/1f0o8asarfspok2zpu5dl86by, line 1: TypeError: n.error is undefined
+JavaScript error: https://platform.linkedin.com/litms/utag/jobs-guest-frontend/utag.js?cb=1662287700000, line 1: TypeError: utag is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: TypeError: e is undefined
+1662288314667	Marionette	INFO	Stopped listening on port 55054
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662288911145	geckodriver	INFO	Listening on 127.0.0.1:55381
+1662288914176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55382" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilec4ZROH"
+1662288914612	Marionette	INFO	Marionette enabled
+1662288914616	Marionette	INFO	Listening on port 55393
+WebDriver BiDi listening on ws://localhost:55382
+Read port: 55393
+1662288914753	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilec4ZROH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55382/devtools/browser/0e995ed4-dbf1-414a-9fe1-eb53aa9a236e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8447x9ug8cv3351hesrwnf4a6, line 6441: unreachable code after return statement
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1662290866957	Marionette	INFO	Stopped listening on port 55393
+2290023708	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55737" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileDYjhZe"
+1662290024164	Marionette	INFO	Marionette enabled
+1662290024168	Marionette	INFO	Listening on port 55748
+WebDriver BiDi listening on ws://localhost:55737
+Read port: 55748
+1662290024300	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileDYjhZe\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55737/devtools/browser/b3dcea6d-2bce-472c-a0c3-32a93e0144f6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1662377642386	geckodriver	INFO	Listening on 127.0.0.1:55119
+1662377645465	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55120" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilekFq92r"
+1662377646076	Marionette	INFO	Marionette enabled
+1662377646084	Marionette	INFO	Listening on port 55130
+WebDriver BiDi listening on ws://localhost:55120
+Read port: 55130
+1662377646281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilekFq92r\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55120/devtools/browser/39064b9e-7827-4def-9600-22a22a1f19ec
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1662377723713	Marionette	INFO	Stopped listening on port 55130
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662378108899	geckodriver	INFO	Listening on 127.0.0.1:55290
+1662378111931	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55291" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilezNhqn6"
+1662378112417	Marionette	INFO	Marionette enabled
+1662378112426	Marionette	INFO	Listening on port 55302
+WebDriver BiDi listening on ws://localhost:55291
+Read port: 55302
+1662378112640	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilezNhqn6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55291/devtools/browser/aa3506c7-26d7-4bc6-9108-01c8defda3ef
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1662378414484	Marionette	INFO	Stopped listening on port 55302
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "55396" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileXDQGlp"
+1662378305493	Marionette	INFO	Marionette enabled
+1662378305497	Marionette	INFO	Listening on port 55407
+WebDriver BiDi listening on ws://localhost:55396
+Read port: 55407
+1662378305633	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileXDQGlp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55396/devtools/browser/d1174e81-c0cd-41fb-89da-3d3bba795e41
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript error: https://static-exp1.licdn.com/sc/h/1f0o8asarfspok2zpu5dl86by, line 1: TypeError: n.error is undefined
+JavaScript error: https://platform.linkedin.com/litms/utag/jobs-guest-frontend/utag.js?cb=1662378300000, line 1: TypeError: utag is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1662378404862	Marionette	INFO	Stopped listening on port 55407
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662378773606	geckodriver	INFO	Listening on 127.0.0.1:55520
+1662378776657	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55521" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileSHkRK4"
+1662378777104	Marionette	INFO	Marionette enabled
+1662378777110	Marionette	INFO	Listening on port 55532
+WebDriver BiDi listening on ws://localhost:55521
+Read port: 55532
+1662378777271	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileSHkRK4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55521/devtools/browser/42ba7186-4125-4d22-bf5f-b70641185ace
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1662378823616	Marionette	INFO	Stopped listening on port 55532
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662379016684	geckodriver	INFO	Listening on 127.0.0.1:55594
+1662379019718	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55595" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilexga1UP"
+1662379020191	Marionette	INFO	Marionette enabled
+1662379020196	Marionette	INFO	Listening on port 55606
+WebDriver BiDi listening on ws://localhost:55595
+Read port: 55606
+1662379020376	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilexga1UP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55595/devtools/browser/a7004c14-0f44-4bd8-9070-b34449875ef1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript error: https://static-exp1.licdn.com/sc/h/1f0o8asarfspok2zpu5dl86by, line 1: TypeError: n.error is undefined
+JavaScript error: https://platform.linkedin.com/litms/utag/jobs-guest-frontend/utag.js?cb=1662378900000, line 1: TypeError: utag is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1662379498510	Marionette	INFO	Stopped listening on port 55606
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662535866637	geckodriver	INFO	Listening on 127.0.0.1:59342
+1662535869694	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59343" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileiF1UP2"
+1662535870253	Marionette	INFO	Marionette enabled
+1662535870261	Marionette	INFO	Listening on port 59354
+WebDriver BiDi listening on ws://localhost:59343
+Read port: 59354
+1662535870462	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofileiF1UP2\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59343/devtools/browser/1cd704b9-9a6c-4de9-ac38-483ad5167d7f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1662549044736	Marionette	INFO	Stopped listening on port 59354
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662558478178	geckodriver	INFO	Listening on 127.0.0.1:56399
+1662558481309	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56400" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilewVGnq6"
+1662558481821	Marionette	INFO	Marionette enabled
+1662558481826	Marionette	INFO	Listening on port 56412
+WebDriver BiDi listening on ws://localhost:56400
+Read port: 56412
+1662558481990	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilewVGnq6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56400/devtools/browser/db7028fc-8520-4d14-bd43-b0b615e90f53
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1666534579616	geckodriver	INFO	Listening on 127.0.0.1:61939
+1666534582687	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61940" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofile8MLMRa"
+1666534616915	geckodriver	INFO	Listening on 127.0.0.1:62101
+1666534619971	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62102" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilemy2E2y"
+1666534620358	Marionette	INFO	Marionette enabled
+1666534620362	Marionette	INFO	Listening on port 62112
+Read port: 62112
+WebDriver BiDi listening on ws://127.0.0.1:62102
+1666534620494	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilemy2E2y\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62102/devtools/browser/12289fb6-6ac4-4aa0-9c50-e5542e45757f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1666535057509	Marionette	INFO	Stopped listening on port 62112
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1668774041547	geckodriver	INFO	Listening on 127.0.0.1:65154
+1668774044614	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65155" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilenLdu6f"
+1668774045136	Marionette	INFO	Marionette enabled
+1668774045142	Marionette	INFO	Listening on port 65166
+Read port: 65166
+WebDriver BiDi listening on ws://127.0.0.1:65155
+1668774045292	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\33671\\AppData\\Local\\Temp\\rust_mozprofilenLdu6f\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65155/devtools/browser/b26530ab-1333-4d09-bc96-41b6cfb8e18a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+1668774203417	Marionette	INFO	Stopped listening on port 65166
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
