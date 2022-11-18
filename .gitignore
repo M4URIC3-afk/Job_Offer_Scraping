@@ -1,6 +1,11 @@
 venv/
 trash/
+<<<<<<< HEAD
 trash
 da_data_raw/
 da_data_workfiles/
 test
+=======
+da_data_raw/
+da_data_workfiles/
+>>>>>>> 70bc8660651a501f65e98f322b2719262dd9d32d
