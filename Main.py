@@ -75,12 +75,13 @@ v.generate_wordcloud(path_from=data_interim, path_to=figures)
 progamming_languages = td.populate_programming_languages()
 td.filter_for_list_of_words(path_from=data_interim, 
                             path_to=data_processed,
-                            f_name="languages_" 
+                            f_name="languages_",
                             search_for=progamming_languages)
 
 # -----------------------------------------------------------------------------
 # Populating most in-demand BI tools from job search
 # -----------------------------------------------------------------------------
+
 # Here I will be using a custom list I've made:
 tools = [
     "power",
@@ -104,7 +105,7 @@ tools = [
 
 td.filter_for_list_of_words(path_from=data_interim, 
                             path_to=data_processed,
-                            f_name="BI-tools_" 
+                            f_name="BI-tools_",
                             search_for=tools)
 
 
