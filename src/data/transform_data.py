@@ -7,31 +7,29 @@ import os
 #  Filer words
 # -----------------------------------------------------------------------------
 def stopwords(path_from, path_to):
+    """Go through a series of csv files countaining words count to apply a filter and return csv files without those words
+
+    Args:
+        path_from (str): folder from
+        path_to (str): folder to
+    """
     # listing files from dir
     files_of_interest = []
     for f in os.listdir(path_from):
         if f.endswith("csv"):
             files_of_interest.append(path_from + f)
     # merging files into one dataframe
-    sw_en_fr = adv.stopwords["english"].union(adv.stopwords["french"]).union({
-        "d", 
-        "l",
-        ":",
-        "&",
-        "/",
-        "êtes",
-        "2",
-        "avez",
-        "d'une",
-        "!",
-        "-",
-        "?",
-        "1"
-        })
+    sw_en_fr = (
+        adv.stopwords["english"]
+        .union(adv.stopwords["french"])
+        .union(
+            {"d", "l", ":", "&", "/", "êtes", "2", "avez", "d'une", "!", "-", "?", "1"}
+        )
+    )
     for f in files_of_interest:
         df = pd.read_csv(f)
-        df = df[~df['word'].isin(sw_en_fr)]
-        print(f'filers applied')
+        df = df[~df["word"].isin(sw_en_fr)]
+        print(f"filers applied")
         file_name = os.path.basename(f)
         df.to_csv(path_to + file_name, index=False)
         print(f"word's filter applied to file {file_name}")
