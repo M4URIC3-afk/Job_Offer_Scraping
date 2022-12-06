@@ -13,7 +13,15 @@ from collections import (
 # Scraping main linkedin page
 # -----------------------------------------------------------------------------
 def scrape_linkedin_search_page(job_title, location):
-    """Scraping main linkedin page based on job_title & location as input. To generate a list of job offer links"""
+    """Scrape linkedin job search page to extract all job offers urls from the first page for a given job title and location. Works with Firefox.
+
+    Args:
+        job_title (str): job title
+        location (str): location
+
+    Returns:
+        list: list of 175 job offers urls
+    """
     # transforming the inputs to a valid format for the url
     job_title_key = "%20".join(job_title.split(" "))
     location_key = "%20".join(location.split(" "))
@@ -54,7 +62,6 @@ def scrape_linkedin_search_page(job_title, location):
     soup = BeautifulSoup(driver.page_source, "html.parser")
 
     job_links = []
-
     # For loop that iterates over all the <li> tags
     for h in soup.findAll("li"):
         # looking for anchor tag inside the <li>tag
@@ -87,7 +94,14 @@ def scrape_linkedin_search_page(job_title, location):
 # Scraping job offer urls
 # -----------------------------------------------------------------------------
 def scrape_linkedin_offers(url_list):
-    """Scraping job offers urls to return a string containing all content"""
+    """Scraping job offers urls to return a string containing all content
+
+    Args:
+        url_list (list): List of all linkedin job offers to scrape through
+
+    Returns:
+        str: String of all of the content scraped
+    """
     # creating text string variables
     words_str = ""
     job_info_str = ""
@@ -136,7 +150,14 @@ def scrape_linkedin_offers(url_list):
 # Creating a dataframe with counts of words
 # -----------------------------------------------------------------------------
 def create_count_words_df(string):
-    "Creating a dataframe with counts of words based on string as input"
+    """Creating a dataframe with counts of words
+
+    Args:
+        string (str): Text to analyse
+
+    Returns:
+        Pandas.DataFrame: Dataframe with all words as first column ('word') and words count as second column ('word_count')
+    """
     # creating a list from the string we had
     words_list = string.split()
 
@@ -152,12 +173,9 @@ def create_count_words_df(string):
     return df_words
 
 
-
-
 # -----------------------------------------------------------------------------
 # Script if executed on its own
 # -----------------------------------------------------------------------------
-
 if __name__ == "__main__":
     job_title = str(input("job_title: "))
     location = str(input("location: "))
@@ -178,4 +196,3 @@ if __name__ == "__main__":
     )
     df_words.to_csv("../../data/raw/" + file_name, index=False)
     print("Raw Data extracted")
-
