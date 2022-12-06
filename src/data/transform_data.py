@@ -33,6 +33,7 @@ def stopwords(path_from, path_to):
         df = pd.read_csv(f)
         df = df[~df["word"].isin(sw_en_fr)]
         print(f"filers applied")
+        
         file_name = os.path.basename(f)
         df.to_csv(path_to + file_name, index=False)
         print(f"word's filter applied to file {file_name}")
@@ -57,7 +58,7 @@ def populate_programming_languages():
     else:
         print("Wikipedia page http://en.wikipedia.org/wiki/List_of_programming_languages not available.")
         
-    soup_programming_languages = BeautifulSoup(programming_languages_page.text)
+    soup_programming_languages = BeautifulSoup(programming_languages_page.text, features='lxml')
     langs = []
     # parse all the links.
     for link in soup_programming_languages.find_all("a"):
@@ -131,25 +132,72 @@ def populate_programming_languages():
         "t",
         "hack",
         "cool",
+        "portable",
+        "carbon",
+        "gap",
+        "actor"
     ]
     langs.difference_update(removelist)
     print(f"Programming languages populated: {len(langs)}")
     
     return langs
-# -----------------------------------------------------------------------------
-# Merging csv into one working file
-# -----------------------------------------------------------------------------
-# def process_data(path_from):
-#     """"""
-#     # listing files from dir
-#     files_in_dir = []
-#     for f in os.listdir(path_from):
-#         if f.endswith("csv"):
-#             files_in_dir.append(path_from + f)
-#     print(f'files in dir: {files_in_dir}')
-#     # merging files into one dataframe
-#     df = pd.concat((pd.read_csv(f) for f in files_in_dir), ignore_index=True)
-#     print(df.head())
-#     return df
 
 
+# -----------------------------------------------------------------------------
+# Returns most in-demand programming languages
+# -----------------------------------------------------------------------------
+def filter_for_list_of_words(path_from, path_to, search_for, f_name):
+    # listing files from dir
+    files_of_interest = []
+    for f in os.listdir(path_from):
+        if f.endswith("csv"):
+            files_of_interest.append(path_from + f)
+    # keeping only the programming languages from the df_word   
+    for f in files_of_interest:
+        df = pd.read_csv(f)
+        df = df[df["word"].isin(search_for)]
+        # # reformating the index
+        # df = df.reset_index()
+        # df.drop("index", axis=1)
+        # saving as csv
+        file_name = os.path.basename(f)
+        df.to_csv(path_to + f_name + file_name, index=False)
+        print(f"filter applied to file {file_name}")
+        
+
+# -----------------------------------------------------------------------------
+# Script if executed on its own
+# -----------------------------------------------------------------------------
+if __name__ == "__main__":
+    stopwords(path_from="../../data/raw/", path_to="../../data/interim/")
+    
+    progamming_languages = populate_programming_languages()
+    filter_for_list_of_words(path_from="../../data/raw/", 
+                            path_to="../../data/interim/",
+                            f_name="languages_",
+                            search_for=progamming_languages)
+    
+    tools = [
+    "power",
+    "tableau",
+    "cognos",
+    "excel",
+    "matlab",
+    "qlikview",
+    "splunk",
+    "grafana",
+    "looker",
+    "domo",
+    "dundas",
+    "yellowfin",
+    "zoho",
+    "plotly",
+    "kibana",
+    "graphite",
+    "graylog"
+    ]
+    
+    filter_for_list_of_words(path_from="../../data/interim/", 
+                            path_to="../../data/processed/",
+                            f_name="BI-tools_",
+                            search_for=tools)
