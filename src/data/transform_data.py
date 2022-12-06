@@ -1,5 +1,8 @@
 import pandas as pd
 import advertools as adv  # provides options for text analysis
+import requests
+from bs4 import BeautifulSoup  # makes it easy to scrape information from web pages
+
 
 import os
 
@@ -36,6 +39,104 @@ def stopwords(path_from, path_to):
 
 
 # -----------------------------------------------------------------------------
+# Populating programming languages list
+# -----------------------------------------------------------------------------
+def populate_programming_languages():
+    """Scrape wikipedia to get a list of programming languages
+
+    Returns:
+        list: List of programming languages
+    """
+    # Using wikipedia page to make sure we stay up to date with programming languages
+    programming_languages_page = requests.get(
+        "http://en.wikipedia.org/wiki/List_of_programming_languages"
+    )
+    # Ensuring the get request is successful
+    if programming_languages_page: # if we use a requests.models.Response instance in a conditional expression, it evaluates to True if the status code is between 200 and 400, and False otherwise
+        print("Wikipedia page http://en.wikipedia.org/wiki/List_of_programming_languages available for scraping.")
+    else:
+        print("Wikipedia page http://en.wikipedia.org/wiki/List_of_programming_languages not available.")
+        
+    soup_programming_languages = BeautifulSoup(programming_languages_page.text)
+    langs = []
+    # parse all the links.
+    for link in soup_programming_languages.find_all("a"):
+        # making it break on the Last link after Z++ which is "List of programming languages"
+        if link.get_text() == "List of programming languages":
+            break
+        if link.get_text() == "edit":
+            pass
+        else:
+            langs.append(link.get_text())
+
+    # find u'See also'
+    see_also_index_ = langs.index("See also")
+    # strip out headers
+    langs = langs[see_also_index_ + 1 :]
+    # convert list to lower-case
+    langs = [lang.lower() for lang in langs]
+    # converting list to set
+    langs = set(langs)
+    # removing languages with ambiguous names or the ones that I'm collecting by mistake (alphabet links etc.)
+    removelist = [
+        "plus",
+        "es",
+        "d",
+        "help",
+        "media",
+        "go",
+        "claire",
+        "simple",
+        "category",
+        "b",
+        "clean",
+        "français",
+        "source",
+        "e",
+        "toi",
+        "beta",
+        "small",
+        "developers",
+        "focus",
+        "joy",
+        "processing",
+        "resources",
+        "contributions",
+        "reason",
+        "rapid",
+        "hope",
+        "scratch",
+        "self",
+        "pilot",
+        "ml",
+        "pipelines",
+        "dc",
+        "abc",
+        "inform",
+        "ease",
+        "basic",
+        "lean",
+        "skill",
+        "read",
+        "statistics",
+        "tea",
+        "dog",
+        "definitions",
+        "logo",
+        "history",
+        "talk",
+        "mad",
+        "chill",
+        "s",
+        "t",
+        "hack",
+        "cool",
+    ]
+    langs.difference_update(removelist)
+    print(f"Programming languages populated: {len(langs)}")
+    
+    return langs
+# -----------------------------------------------------------------------------
 # Merging csv into one working file
 # -----------------------------------------------------------------------------
 # def process_data(path_from):
@@ -50,3 +151,5 @@ def stopwords(path_from, path_to):
 #     df = pd.concat((pd.read_csv(f) for f in files_in_dir), ignore_index=True)
 #     print(df.head())
 #     return df
+
+
