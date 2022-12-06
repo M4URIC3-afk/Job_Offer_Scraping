@@ -34,6 +34,7 @@ It is currently set up to use Mozilla Firefox as a browser in order to scroll th
 ## Description
 Since I'm looking for a job, I thought I should define what are the most in-demand programming languages and dashboarding tools in the job market. And could use python to do that while learning. 
 
+
 ## Technology
 Python and its various external and internal libraries:
 - `requests` to make HTTP requests in Python
@@ -59,4 +60,4 @@ Python and its various external and internal libraries:
 
 
 ## License
-This project is open-source and available under the [MIT License](https://choosealicense.com/licenses/mit/). 
+This project is open-source and available under the [MIT License](https://choosealicense.com/licenses/mit/).
