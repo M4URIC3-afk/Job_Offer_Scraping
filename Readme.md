@@ -1,6 +1,6 @@
 # Finding the most in-demand programming languages from Job Offers
 -----------
-This Python notebook scrapes the most recent Job Offers from a 'very well-known site' for a given job title and tells what are the most in-demand programming languages based on their occurrences. 
+This Python script scrapes the most recent Job Offers from a 'very well-known site' for a given job title and tells what are the most in-demand programming languages based on their occurrences. 
 
 It is currently set up for job offers written in French or English.
 It is currently set up to use Mozilla Firefox as a browser in order to scroll through this 'very well-known site' search page since job offers appear while scrolling.
@@ -33,6 +33,10 @@ It is currently set up to use Mozilla Firefox as a browser in order to scroll th
 
 ## Description
 Since I'm looking for a job, I thought I should define what are the most in-demand programming languages and dashboarding tools in the job market. And could use python to do that while learning. 
+
+
+## Demo video
+https://youtu.be/seVgmehFYdM
 
 
 ## Technology
