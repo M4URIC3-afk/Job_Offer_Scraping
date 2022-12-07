@@ -31,18 +31,26 @@ for folder in folders:
         with open(folder + '.gitkeep', 'w') as fp: # create .gitkeep file
             pass
         print(f"Directory Created:{folder}\n")
-    
+
+wait = input("Press Enter to continue.")
+
 # -----------------------------------------------------------------------------
-# Scrapping data
+# Scraping data
 # -----------------------------------------------------------------------------
 
 # specifying variables input for searching
 job_title = str(input("job_title: "))
 location = str(input("location: "))
 
+# 
 job_links = ed.scrape_linkedin_search_page(job_title, location)
+wait = input("Press Enter to continue.")
+
 words_str = ed.scrape_linkedin_offers(job_links)
+wait = input("Press Enter to continue.")
+
 df_words = ed.create_count_words_df(words_str)
+wait = input("Press Enter to continue.")
 
 #generating a raw csv file
 timestr = time.strftime("%Y%m%d-%H%M%S")
@@ -57,33 +65,29 @@ file_name = (
 )
 df_words.to_csv(data_raw + file_name, index=False)
 print("raw data saved")
-
+wait = input("Press Enter to continue.")
 
 # -----------------------------------------------------------------------------
 # Filtering data from non useful words
 # -----------------------------------------------------------------------------
 td.stopwords(path_from=data_raw, path_to=data_interim)
-
-# -----------------------------------------------------------------------------
-# Generating wordcloud
-# -----------------------------------------------------------------------------
-v.generate_wordcloud(path_from=data_interim, path_to=figures)
-
+wait = input("Press Enter to continue.")
 # -----------------------------------------------------------------------------
 # Populating most in-demand programming languages from job search
 # -----------------------------------------------------------------------------
-progamming_languages = td.populate_programming_languages()
+programming_languages = td.populate_programming_languages()
 td.filter_for_list_of_words(path_from=data_interim, 
                             path_to=data_processed,
                             f_name="languages_",
-                            search_for=progamming_languages)
-
+                            search_for=programming_languages)
+wait = input("Press Enter to continue.")
 # -----------------------------------------------------------------------------
 # Populating most in-demand BI tools from job search
 # -----------------------------------------------------------------------------
 
 # Here I will be using a custom list I've made:
 tools = [
+    "excel",
     "power",
     "tableau",
     "cognos",
@@ -107,12 +111,44 @@ td.filter_for_list_of_words(path_from=data_interim,
                             path_to=data_processed,
                             f_name="BI-tools_",
                             search_for=tools)
+wait = input("Press Enter to continue.")
 
 
+
+
+tools = [
+    "gcp",
+    "google",
+    "aws",
+    "amazon",
+    "google",
+    "azure",
+    "microsoft",
+    "alibaba",
+    "oracle",
+    "ibm",
+    "kyndryl",
+    "rackspace",
+    "salesforce",
+    "sap",
+    "ovh",
+    "digitalocean",
+    "tencent",
+    "vmware"
+]
+
+td.filter_for_list_of_words(path_from=data_interim, 
+                            path_to=data_processed,
+                            f_name="Cloud_",
+                            search_for=tools)
+wait = input("Press Enter to continue.")
 
 # -----------------------------------------------------------------------------
-# Generating bar charts
+# Generating word clouds and bar charts
 # -----------------------------------------------------------------------------
+v.generate_wordcloud(path_from=data_interim, path_to=figures)
+wait = input("Press Enter to continue.")
+
 v.generate_bar_charts(path_from=data_processed, path_to=figures)
-
+wait = input("Press Enter to continue.")
 

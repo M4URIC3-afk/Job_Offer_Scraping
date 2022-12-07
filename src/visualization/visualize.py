@@ -9,7 +9,7 @@ import os
 # plotting word cloud
 # -----------------------------------------------------------------------------
 def generate_wordcloud(path_from, path_to):
-    """Generate a wordcloud from csv files saved in a given folder. CSV files need to be formated with column 'word' with all the given words and column 'word_count' with the weight of each word
+    """Generate a wordcloud from csv files saved in a given folder. CSV files need to be formatted with column 'word' with all the given words and column 'word_count' with the weight of each word
 
     Args:
         path_from (str): path from where to look for csv

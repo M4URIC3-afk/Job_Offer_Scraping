@@ -7,10 +7,10 @@ from bs4 import BeautifulSoup  # makes it easy to scrape information from web pa
 import os
 
 # -----------------------------------------------------------------------------
-#  Filer words
+#  Filer "useless" words
 # -----------------------------------------------------------------------------
 def stopwords(path_from, path_to):
-    """Go through a series of csv files countaining words count to apply a filter and return csv files without those words
+    """Go through a series of csv files containing words count to apply a filter and return csv files without those words
 
     Args:
         path_from (str): folder from
@@ -171,11 +171,11 @@ def filter_for_list_of_words(path_from, path_to, search_for, f_name):
 if __name__ == "__main__":
     stopwords(path_from="../../data/raw/", path_to="../../data/interim/")
     
-    progamming_languages = populate_programming_languages()
+    programming_languages = populate_programming_languages()
     filter_for_list_of_words(path_from="../../data/raw/", 
                             path_to="../../data/interim/",
                             f_name="languages_",
-                            search_for=progamming_languages)
+                            search_for=programming_languages)
     
     tools = [
     "power",
